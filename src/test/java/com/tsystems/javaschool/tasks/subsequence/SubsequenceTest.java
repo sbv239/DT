@@ -12,7 +12,7 @@ import static java.util.stream.Collectors.toList;
 
 public class SubsequenceTest {
 
-    private Subsequence subsequence = new Subsequence();
+    private final Subsequence subsequence = new Subsequence();
 
     @Test
     public void find0() {

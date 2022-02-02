@@ -10,7 +10,7 @@ import org.junit.Test;
 
 public class PyramidBuilderTest {
 
-    private PyramidBuilder pyramidBuilder = new PyramidBuilder();
+    private final PyramidBuilder pyramidBuilder = new PyramidBuilder();
 
     @Test
     public void buildPyramid0() {
@@ -101,7 +101,7 @@ public class PyramidBuilderTest {
 
 
     @Test(expected = CannotBuildPyramidException.class)
-    public void buildPyramid1() {
+    public void  buildPyramid1() {
         // given
         List<Integer> input = Arrays.asList(1, 3, 2, 9, 4, null);
 
